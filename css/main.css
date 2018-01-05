@@ -1,0 +1,28 @@
+#logo-container {
+  width: 100%;
+  max-width:100%;
+  text-align: center;
+}
+
+#logo-container img {
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: auto;
+  min-width: 60px;
+  max-width: 256px;
+}
+
+.col {
+  text-align: center;
+}
+
+#slack-bar {
+  background-color: black;
+  color: white;
+}
+
+#footer {
+  background-color: green;
+  color: white;
+}
