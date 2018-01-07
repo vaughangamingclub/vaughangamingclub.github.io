@@ -2,10 +2,11 @@
 <html>
 <head>
   <title>Vaughan Gaming Club</title>
-  <meta http-equiv="refresh" content="10" >
+  <!--meta http-equiv="refresh" content="10"-- >
   <!-- Remove the meta code -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,43 +19,62 @@
 
   <!-- Main.css -->
   <link rel="stylesheet" href="./css/main.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans|Play" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row" id="logo-container">
-      <div class="col">
-        <img src='./source/temp.svg'/>
-      </div>
-    </div><!-- End of row 1 -->
-    <div class="row">
-      <div class="col">
-        <h1 class="display-1">Vaughan Gaming Club</h1>
-      </div>
-    </div><!-- End of row 2 -->
-    <div class="row">
-      <div class="col">
-        <a class="btn btn-primary">Join us on our gaming adventure!</a>
-      </div>
-    </div><!-- End of row 3 -->
+  <div class="container-fluid" id="main-page-container">
+    <div class="container-fluid" id="main-page">
+      <div class="row">
+        <div class="col" id="logo-container">
+          <img src='./source/heart.svg'/>
+        </div>
+      </div><!-- End of row 1 -->
+      <div class="row">
+        <div class="col" id="site-title">
+          <h1 class="display-1">Vaughan Gaming Club</h1>
+        </div>
+      </div><!-- End of row 2 -->
+      <div class="row">
+        <div class="col">
+          <a class="btn btn-primary" id="call-to-action">Join us on our gaming adventure!</a>
+        </div>
+      </div><!-- End of row 3 -->
+    </div>
   </div><!-- End of Main Container -->
-  <div class="container-fluid" id="slack-bar">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row" id="slack-bar">
       <div class="col">
-        <p> We use slack :) </p>
+        <div>
+          <img id="slack-logo" src="./source/slack.svg"/>
+        </div>
+        <div>
+          <a href="https://slack.com/get-started" id="slack-message">Slack is our messaging platform.</a>
+        </div>
       </div>
     </div>
   </div><!-- End of Slack Bar -->
   <div class="container-fluid" id="objectives">
     <div class="row">
+      <div class="col">
+        <h3>What we do currently:</h3>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-4">
-        <p>Bi-weekly Meetings</p>
+        <div class="objective-icons"><img src="./source/group.svg"/></div>
+        <h5>Bi-Weekly Meetings</h5>
+        <p>We gather every other fridays if we need to.</p>
       </div>
       <div class="col-md-4">
-        <p>League of Legend Competitive Matches</p>
+        <div class="objective-icons"><img src="./source/twitch.svg"/></div>
+        <h5>League of Legend Competitive Matches</h5>
+        <p>We currently have six teams on rotations playing competitively within our school. We are hoping to add livestreaming to our matches in the future.</p>
       </div>
       <div class="col-md-4">
-        <p>Super Smash Bro Tournaments</p>
+        <div class="objective-icons"><img src="./source/gamepad.svg"/></div>
+        <h5>Super Smash Bro Tournaments</h5>
+        <p>We hold monthly tournaments for Super Smash Brothers within the school.</p>
       </div>
     </div>
   </div><!-- End of Objectives -->
@@ -84,10 +104,10 @@
       </div>
     </div>
   </div><!-- End of Hiring -->
-  <div class="container-fluid" id="footer">
+  <div class="container-fluid" id="footer-container">
     <div class="row">
-      <div class="col">
-        <p> Footer! </p>
+      <div class="col" id="footer">
+        <p>	GAME ON! | &copy; <script>document.write(new Date().getFullYear())</script> Vaughan Secondary School.</p>
       </div>
     </div>
   </div>

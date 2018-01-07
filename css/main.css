@@ -1,3 +1,28 @@
+body {
+  background-color: rgb(32,32,32);
+}
+
+.col,h4,h5,h6 {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* Main Page Section */
+#main-page-container {
+  position: relative;
+  min-height: 100vh;
+  background: url("../source/main-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgb(32,32,32);
+  padding: 0px;
+}
+
+#main-page {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 #logo-container {
   width: 100%;
   max-width:100%;
@@ -7,22 +32,99 @@
 #logo-container img {
   display: block;
   margin: auto;
-  width: 40%;
+  width: 30%;
+  max-width: 128px;
   height: auto;
   min-width: 60px;
   max-width: 256px;
 }
 
-.col {
-  text-align: center;
+#site-title {
+  margin-top: 3.5%;
+  color: rgb(252,252,252);
+  font-family: 'Lobster', cursive;
 }
 
+#call-to-action {
+  margin-top: 3.5%;
+  color:rgb(252,252,252);
+  font-family: 'Play', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Slack Bar ... end of Main Page */
 #slack-bar {
-  background-color: black;
+  background-color: rgb(242,82,110);
+  height: 128px;
+  line-height: 58px;
+  padding-top: 6px;
+  color: white;
+}
+
+#slack-logo {
+  width: 48px;
+  height: auto;
+  vertical-align: middle;
+  padding: 4px;
+  background-color: rgb(252,252,252);
+  border-radius: 50%;
+}
+
+#slack-message {
+  color: rgb(252,252,252);
+  padding: 5px 10px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16pt;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+#slack-message:hover {
+  text-decoration: none;
+}
+
+/* Objectives ... end of slack bar */
+#objectives {
+  min-height: 256px;
+  background-color: rgb(252,252,252);
+  color: rgb(32,32,32);
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.objective-icons {
+  margin-bottom: 12px;
+}
+
+.objective-icons img {
+  width: 48px;
+  height: auto;
+}
+
+#objectives h3 {
+  font-family: 'Lobster', cursive;
+  margin-bottom: 24px;
+}
+
+#objectives h5 {
+  font-family: 'Play', sans-serif;
+}
+
+/* Hiring ... end of objectives */
+#hiring {
+  display: none;
+}
+
+#footer-container {
+  background-color: rgb(32,32,32);
   color: white;
 }
 
 #footer {
-  background-color: green;
-  color: white;
+  padding-top: 10px;
+  min-height: 32px;
+  line-height: 32px;
+  font-family: 'PT Sans', sans-serif;
+
 }
