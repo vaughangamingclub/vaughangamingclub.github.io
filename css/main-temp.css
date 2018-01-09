@@ -1,0 +1,187 @@
+body {
+  min-height: 100vh;
+  max-height: 100vh;
+  background: url("../source/main-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgb(32,32,32);
+  padding: 0;
+}
+
+p {
+  font-size: 15px;
+}
+
+#main-container {
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+#main-page {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: rgb(252,252,252);
+}
+
+#main-logo img {
+  max-width: 128px;
+  height: auto;
+}
+
+#main-title h1 {
+  font-family: 'Righteous', cursive;
+}
+
+#main-link a {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Slack */
+#slack-container {
+  background-color: rgba(242,82,110,0.9);
+  padding: 15px 0px;
+  text-align: center;
+}
+
+#slack-logo img {
+  max-width: 30px;
+  height: auto;
+  padding: 2px;
+  background-color: rgb(252,252,252);
+  border-radius: 50%;
+}
+
+#slack-message a {
+  color: rgb(252,252,252);
+  font-family: 'Raleway', sans-serif;
+  text-decoration: underline;
+}
+
+#slack-message a:hover {
+  text-decoration: none;
+}
+
+/* Objectives */
+#objectives-container {
+  min-width: 100%;
+  min-height: 50%;
+  width: 100%;
+  height: auto;
+  background-color: rgb(252,252,252);
+  text-align: center;
+}
+
+#objectives-title {
+  margin-top: 24px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+#objectives {
+  padding: 12px 24px 24px 24px;
+}
+
+#objectives p {
+  color: rgb(32,32,32);
+}
+
+#objectives img {
+  margin-bottom: 12px;
+}
+
+#objectives h6 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Hiring */
+
+#hiring {
+  background-color: rgba(2,56,82,0.7);
+  color: rgb(252,252,252);
+}
+
+#hiring-title {
+  padding: 24px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+#hiring-title-hr {
+  width: 64px;
+  height: 2px;
+  background: rgb(252,252,252);
+}
+
+#hiring-positions {
+  padding: 24px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+#hiring-positions h6 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Footer */
+#footer-container {
+  background-color: rgb(32,32,32);
+  color: white;
+}
+
+#footer {
+  padding: 12px;
+  min-height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+#footer > p {
+  font-size: 12px;
+}
+
+/* Margins */
+#main-logo img, #main-link a, #slack-message, #objectives  {
+  margin-top: 15px;
+}
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+
+/*container-fluid padding fix */
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
