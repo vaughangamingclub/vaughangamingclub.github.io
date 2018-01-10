@@ -199,5 +199,5 @@ p {
 /*container-fluid padding fix */
 .container-fluid {
   padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-right: -15px !important;
 }
